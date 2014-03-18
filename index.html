@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>scrollify example</title>
+		<script src="scrollify.js"></script>
+		<style>			
+			.outer {
+				width: 150px;
+				height: 20px;
+				font-size: 20px;
+				top: 0;
+				left: 0;
+				overflow: hidden;
+				position: relative;
+			}
+			.inner {
+				position: absolute;
+				width: 100%;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+  				overflow: hidden;				
+			}
+			.inner.no-overflow {
+				text-overflow: clip;
+				overflow: visible;
+			}
+		</style>
+	</head>
+	<body>
+		<div class='outer'>
+			<div class='inner'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+		</div>
+	</body>
+</html>
